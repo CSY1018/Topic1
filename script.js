@@ -1,9 +1,19 @@
+function updateParagraph() {
+        var element = document.getElementById('paragraph');
+    		element.firstChild.nodeValue = 'New Heading';
+}
+
+function updateH1() {
+        var element = document.getElementById('pageheading');
+    		element.firstChild.nodeValue = 'New paragraph contents';
+}
+
 function myLoadFunction() {
         var element = document.getElementById('pageheading');
-        element.firstChild.nodeValue = 'New Heading';
+        element.addEventListener('click', updateH1);
 
         var element = document.getElementById('paragraph');
-        element.firstChild.nodeValue = 'New paragraph text';
+        element.addEventListener('click', updateParagraph);
 }
 
 
