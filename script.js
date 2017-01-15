@@ -7,4 +7,4 @@ function myLoadFunction() {
 }
 
 
-document.addEventListener('DOMContentLoaded', myLoadFunction);
+document.addEventListener('click', myLoadFunction);
